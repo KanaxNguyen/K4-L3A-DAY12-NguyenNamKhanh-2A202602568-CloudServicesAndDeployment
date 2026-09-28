@@ -5,6 +5,8 @@ gọi được, có bảo mật, có giới hạn chi phí, và không sập khi
 
 ## Bài nộp — Nguyễn Nam Khánh · 2A202602568
 
+[![CI/CD Pipeline](https://github.com/KanaxNguyen/K4-L3A-DAY12-NguyenNamKhanh-2A202602568-CloudServicesAndDeployment/actions/workflows/ci.yml/badge.svg)](https://github.com/KanaxNguyen/K4-L3A-DAY12-NguyenNamKhanh-2A202602568-CloudServicesAndDeployment/actions/workflows/ci.yml)
+
 - [Repository GitHub](https://github.com/KanaxNguyen/K4-L3A-DAY12-NguyenNamKhanh-2A202602568-CloudServicesAndDeployment)
 - [Service công khai](https://day12-agent-dhvl.onrender.com)
 - [Health](https://day12-agent-dhvl.onrender.com/health) · [Readiness](https://day12-agent-dhvl.onrender.com/ready) · [Swagger API](https://day12-agent-dhvl.onrender.com/docs)
