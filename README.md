@@ -3,6 +3,15 @@
 Đưa một AI agent từ `localhost:8000` lên một địa chỉ công khai mà người khác
 gọi được, có bảo mật, có giới hạn chi phí, và không sập khi bạn deploy bản mới.
 
+## Bài nộp — Nguyễn Nam Khánh · 2A202602568
+
+- [Repository GitHub](https://github.com/KanaxNguyen/K4-L3A-DAY12-NguyenNamKhanh-2A202602568-CloudServicesAndDeployment)
+- [Service công khai](https://day12-agent-dhvl.onrender.com)
+- [Health](https://day12-agent-dhvl.onrender.com/health) · [Readiness](https://day12-agent-dhvl.onrender.com/ready) · [Swagger API](https://day12-agent-dhvl.onrender.com/docs)
+- [Render Dashboard](https://dashboard.render.com/web/srv-dat2hrg473hc73efm2u0)
+- [Bản deploy ngày 28/09/2026](https://dashboard.render.com/web/srv-dat2hrg473hc73efm2u0/deploys/dep-dat31ph7lnhs73bevp40?r=2026-09-28%4009%3A17%3A30%7E2026-09-28%4009%3A19%3A58)
+- [Báo cáo CP5](DEPLOYMENT.md) · [Ảnh minh chứng](screenshots/README.md)
+
 ---
 
 ## ⚠️ Bài Làm Cá Nhân

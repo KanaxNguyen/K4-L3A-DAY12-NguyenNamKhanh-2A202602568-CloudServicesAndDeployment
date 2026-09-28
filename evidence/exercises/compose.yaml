@@ -1,0 +1,17 @@
+services:
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 1s
+      timeout: 3s
+      retries: 15
+  agent:
+    image: day12-agent:exercise-multi
+    environment:
+      AGENT_API_KEY: exercise-local-key
+      REDIS_URL: redis://redis:6379/0
+      PORT: 8000
+    depends_on:
+      redis:
+        condition: service_healthy

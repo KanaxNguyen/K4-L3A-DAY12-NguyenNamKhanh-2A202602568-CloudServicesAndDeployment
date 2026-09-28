@@ -1,0 +1,30 @@
+{
+  "requests": [
+    {
+      "instance": 1,
+      "history_length": 0,
+      "cost_usd": 2.52e-05
+    },
+    {
+      "instance": 2,
+      "history_length": 2,
+      "cost_usd": 3.84e-05
+    },
+    {
+      "instance": 3,
+      "history_length": 4,
+      "cost_usd": 4.71e-05
+    },
+    {
+      "instance": 1,
+      "history_length": 6,
+      "cost_usd": 5.595e-05
+    }
+  ],
+  "ask_logs": [
+    "{\"event\": \"ask_completed\", \"level\": \"info\", \"timestamp\": \"2026-09-28T10:04:48.964394+00:00\", \"user_id\": \"exercises-scale\", \"tokens_in\": 114, \"tokens_out\": 50, \"cost_usd\": 4.71e-05}",
+    "{\"event\": \"ask_completed\", \"level\": \"info\", \"timestamp\": \"2026-09-28T10:04:48.403026+00:00\", \"user_id\": \"exercises-scale\", \"tokens_in\": 8, \"tokens_out\": 40, \"cost_usd\": 2.52e-05}",
+    "{\"event\": \"ask_completed\", \"level\": \"info\", \"timestamp\": \"2026-09-28T10:04:49.219711+00:00\", \"user_id\": \"exercises-scale\", \"tokens_in\": 173, \"tokens_out\": 50, \"cost_usd\": 5.595e-05}",
+    "{\"event\": \"ask_completed\", \"level\": \"info\", \"timestamp\": \"2026-09-28T10:04:48.687580+00:00\", \"user_id\": \"exercises-scale\", \"tokens_in\": 56, \"tokens_out\": 50, \"cost_usd\": 3.84e-05}"
+  ]
+}

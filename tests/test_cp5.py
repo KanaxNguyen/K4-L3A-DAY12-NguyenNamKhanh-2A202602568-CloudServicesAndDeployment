@@ -18,6 +18,8 @@ import httpx
 import pytest
 
 TIMEOUT = 20.0
+PUBLIC_URL = "https://day12-agent-dhvl.onrender.com"
+RENDER_DASHBOARD_URL = "https://dashboard.render.com/web/srv-dat2hrg473hc73efm2u0"
 LOCAL_URL = os.getenv("LOCAL_BASE_URL", "http://localhost:8000")
 PLACEHOLDER_HINTS = ("todo", "your-app", "example.com", "abcxyz", "dien-vao", "<")
 
@@ -79,10 +81,14 @@ def base_url(deployment_text) -> str:
     url = extract_url(deployment_text)
     if not url:
         pytest.fail(
-            "Chưa điền Public URL thật vào DEPLOYMENT.md.\n"
+            f"Public URL cần điền trong DEPLOYMENT.md: {PUBLIC_URL}\n"
             "Nếu bạn dùng phương án dự phòng, đặt LOCAL_FALLBACK=true trong .env."
         )
-    return url
+    assert url.rstrip("/") == PUBLIC_URL, (
+        f"Public URL trong DEPLOYMENT.md là {url}, cần là {PUBLIC_URL}. "
+        f"Dashboard quản lý service: {RENDER_DASHBOARD_URL}"
+    )
+    return PUBLIC_URL
 
 
 class TestDeploymentDoc:
@@ -132,7 +138,7 @@ class TestPublicDeployment:
         response = call("GET", f"{base_url}/health", timeout=FIRST_CALL_TIMEOUT)
         assert response.status_code == 200, (
             f"{base_url}/health trả {response.status_code}. "
-            "Xem log trên dashboard của platform."
+            f"Xem log tại {RENDER_DASHBOARD_URL}/logs."
         )
         assert response.json().get("status") == "ok"
 
